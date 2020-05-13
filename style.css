@@ -1,0 +1,132 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: white;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #f5f7ff;
+  height: 16rem;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0 16rem;
+  padding-top: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 auto;
+          flex: 5 1 auto;
+}
+
+.title span {
+  color: #1e202a;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.info-data {
+  color: #63687e;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.dark-mode {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 14px;
+  color: #63687e;
+  font-weight: 400;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.dark-mode span {
+  float: right;
+  font-weight: 400;
+  color: #63687e;
+  line-height: 22px;
+}
+
+.theme-switch {
+  margin-left: 14px;
+  height: 22px;
+  position: relative;
+  width: 44px;
+  float: right;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: white;
+  bottom: 4px;
+  content: "";
+  height: 14px;
+  left: 4px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 14px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+          transform: translateX(22px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.attribution {
+  font-size: 11px;
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
