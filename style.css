@@ -168,7 +168,7 @@ input:checked + .slider:before {
   background-color: var(--card-bg) !important;
   padding: 8px;
   height: 16rem;
-  width: 20rem;
+  width: 16rem;
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
@@ -289,7 +289,7 @@ input:checked + .slider:before {
   margin: 12px 0;
   height: 8rem;
   padding: 8px;
-  width: 20rem;
+  width: 16rem;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -394,6 +394,18 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 1599px) {
+  .overview {
+    margin-top: 12rem;
+  }
+  .main-card {
+    margin-bottom: 16px;
+  }
+  .attribution {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1342px) {
   .overview {
     margin-top: 30rem;
   }
